@@ -1,7 +1,3 @@
-language: none
-services:
- - docker
- 
 env:
  - REGISTRY_EMAIL=jacob.meloche\@aquasec.com
  - REGISTRY_PW=Alexander1
