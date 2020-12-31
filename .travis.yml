@@ -1,8 +1,10 @@
-env:
-  - REGISTRY_EMAIL=jacob.meloche\@saquasec.com
-  - REGISTRY_PW=Alexander1
-
+language: none
+services:
+ - docker
  
+ env:
+  - REGISTRY_EMAIL=jacob.meloche\@aquasec.com
+  - REGISTRY_PW=Alexander1
 
 before_install:
   - docker login registry.aquasec.com -u jacob.meloche@aquasec.com -p Alexander1
