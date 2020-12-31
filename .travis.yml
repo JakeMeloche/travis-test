@@ -10,4 +10,4 @@ before_install:
  - docker login registry.aquasec.com -u jacob.meloche@aquasec.com -p Alexander1
  - docker pull registry.aquasec.com/scanner:5.3
  - docker pull dit4c/gotty:latest
- - docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /tmp:/tmp registry.aquasec.com/scanner:5.3 scan --host http://ec2-34-213-162-4.us-west-2.compute.amazonaws.com:8001/api/ -U administrator -P @Password1 --local dit4c/gotty:latest --layer-vulnerabilities --no-verify
+ - docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /tmp:/tmp registry.aquasec.com/scanner:5.3 scan --host http://ec2-34-213-162-4.us-west-2.compute.amazonaws.com:8001/ -U administrator -P @Password1 --local dit4c/gotty:latest --layer-vulnerabilities --no-verify
