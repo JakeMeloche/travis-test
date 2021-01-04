@@ -2,4 +2,4 @@ before_install:
  - docker login registry.aquasec.com -u jacob.meloche@aquasec.com -p Alexander1
  - docker pull registry.aquasec.com/scanner:5.3
  - docker pull dit4c/gotty:latest
- - docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /tmp:/tmp registry.aquasec.com/scanner:5.3 scan --host https://1xor8bqaw-d-us-e1-s-console.aese.aquasec.com/ -U jmeloche -P Aqu@sec5 --local dit4c/gotty:latest --layer-vulnerabilities --no-verify
+ - docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /tmp:/tmp registry.aquasec.com/scanner:5.3 scan --host http://aquasec-demo1828-vm0.eastus.cloudapp.azure.com/ -U administrator -P P@ssword01 --local dit4c/gotty:latest --layer-vulnerabilities --no-verify
